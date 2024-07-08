@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3181643370041332789}
   - component: {fileID: 3181643370041332788}
   - component: {fileID: 3181643370041332795}
+  - component: {fileID: 4187834851235553302}
   m_Layer: 5
-  m_Name: Card
+  m_Name: Card 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6788616585012486100, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}
+      - m_Target: {fileID: 4187834851235553302}
         m_TargetAssemblyTypeName: CardInteract, Assembly-CSharp
         m_MethodName: CardClick
         m_Mode: 1
@@ -133,3 +134,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4187834851235553302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3181643370041332793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec99e2b783277e145b5a6a58cac6afe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 11400000, guid: de4f48abde8d2a7489bef733bf86eb0f, type: 2}

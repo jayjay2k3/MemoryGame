@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: c2725e85ef689be48b2cf90ff65e22fb
+  productGUID: 0351210c7c3b235499dc601cb3ce8b79
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: MemoryGame1111
+  productName: MemoryGame
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -769,10 +769,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 67d7e58d-9393-4388-aa4e-d7054008f28f
+  cloudProjectId: 76c2bdb8-749a-4d1d-8547-7eb95c51b0c5
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: MemoryGame1111
+  projectName: MemoryGame 2024-07-09_19-23-31
   organizationId: trungtindzz
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

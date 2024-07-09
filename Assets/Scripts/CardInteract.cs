@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 public class CardInteract : MonoBehaviour
 {
-    public CardProperties card;
-    
+    public CardProperties cardProperties;
+    public GameManager gameManager;
+    private void Start() {
+        gameManager=FindObjectOfType<GameManager>();
+        name=cardProperties.card.name;
+    }
     public void CardClick()
     {
-        Debug.Log(card.card.name);
+        if(gameManager.canClick)
+        {
+            Debug.Log(name);
+            gameObject.GetComponent<Image>().sprite=cardProperties.card;
+            gameManager.pair_card.Add(gameObject);
+        }
         
     }
 }

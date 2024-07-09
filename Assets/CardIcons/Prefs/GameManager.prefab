@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cards:
+  - {fileID: 11400000, guid: a6245c3296de3aa45a5be72542e03c22, type: 2}
   - {fileID: 11400000, guid: e59f52bfc15019d47a3d54548796ab60, type: 2}
   - {fileID: 11400000, guid: de4f48abde8d2a7489bef733bf86eb0f, type: 2}
   - {fileID: 11400000, guid: aeffbe33d528f2a4f8a6b53ee2dc7db4, type: 2}
@@ -53,3 +54,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e6cd6fd0580e64e498e33c1f5fa79e17, type: 2}
   - {fileID: 11400000, guid: 58831b53cde6eb54c8dda81a1bd9894e, type: 2}
   - {fileID: 11400000, guid: 0688542799a6bf746b25268ba608e6cb, type: 2}
+  cardOpened: 0

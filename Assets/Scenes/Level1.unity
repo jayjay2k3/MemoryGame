@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Card 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3181643370041332793, guid: d6e4894e24a1a9f4ea6d2340fa2324a9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3181643370041332794, guid: d6e4894e24a1a9f4ea6d2340fa2324a9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -903,7 +907,7 @@ GameObject:
   - component: {fileID: 540183740}
   - component: {fileID: 540183741}
   m_Layer: 5
-  m_Name: GameField
+  m_Name: CardField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1388,6 +1392,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540183740}
     m_Modifications:
+    - target: {fileID: 3181643370041332788, guid: fd13783f440ada94b9f666fa94ede3d2, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3181643370041332793, guid: fd13783f440ada94b9f666fa94ede3d2, type: 3}
       propertyPath: m_Name
       value: Card 0 (1)

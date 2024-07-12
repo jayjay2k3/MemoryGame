@@ -147,3 +147,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardProperties: {fileID: 11400000, guid: 58831b53cde6eb54c8dda81a1bd9894e, type: 2}
+  gameManager: {fileID: 6788616585012486103, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}

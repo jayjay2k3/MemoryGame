@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Drawing;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -106,12 +108,4 @@ public class GameManager : MonoBehaviour
         tempLevelTime=levelTime;
     }
 
-    public void Home()
-    {
-        generateGame();
-        gameOverPanel.SetActive(false);
-        canClick=true;
-        gameStop=false;
-        tempLevelTime=levelTime;
-    }
 }

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour 
 {
-    public int numOfCards;
+    public int numOfRows;
     public Sprite defaultImg;
     public GameObject[] Cards;
     public float delay=2;
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        for(int i=0;i<numOfCards;i++)
+        for(int i=0;i<numOfRows*5;i++)
         {
             int randomCard= Random.Range(0,8);
             GameObject card= GameObject.Instantiate(Cards[randomCard]);

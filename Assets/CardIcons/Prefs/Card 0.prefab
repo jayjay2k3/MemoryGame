@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec99e2b783277e145b5a6a58cac6afe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardProperties: {fileID: 11400000, guid: e59f52bfc15019d47a3d54548796ab60, type: 2}
+  cardProperties: {fileID: 21300000, guid: 8c0e08b7f3db244418f2a70cf6ff1ac3, type: 3}
   gameManager: {fileID: 6788616585012486103, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}

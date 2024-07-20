@@ -8,15 +8,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public enum GameMode{
-                    Easy,
-                    Normal,
-                    Hard
-                    };
 public class GameManager : MonoBehaviour 
 {
-    
-    public GameMode gameMode;
+
     public int numOfRows;
     public Sprite defaultImg;
     public GameObject[] Cards;
@@ -36,8 +30,7 @@ public class GameManager : MonoBehaviour
     public int wrongCardOpened=0;
 
     private void Start() {
-
-       if(gameMode==GameMode.Easy)
+       if(PlayerPrefs.GetString("gameMode")=="Easy")
        {
             numOfRows=3;
             CardField.GetComponent<RectTransform>().anchoredPosition=  new Vector3(-70,50,0);
@@ -81,12 +74,13 @@ public class GameManager : MonoBehaviour
                                     cardLeft--;
                                     
                                 }
-                                if(cardLeft==0)
+                                if(cardLeft==0 && tempLevelTime>0)
                                 {
-                                    Debug.Log("You Won");
+                                    gameWinPanel.SetActive(true);
+                                    gameStop=true;
                                 }
 
-                                if(gameMode==GameMode.Hard)
+                                if(PlayerPrefs.GetString("gameMode")=="Hard")
                                 {
                                     wrongCardOpened=0;
                                 }
@@ -99,7 +93,7 @@ public class GameManager : MonoBehaviour
                                     child.transform.rotation= Quaternion.Euler(new Vector3(0,0,0));
                                 }
 
-                                if(gameMode==GameMode.Hard)
+                                if(PlayerPrefs.GetString("gameMode")=="Hard")
                                 {
                                     wrongCardOpened++;
                                 }
@@ -119,7 +113,6 @@ public class GameManager : MonoBehaviour
            canClick=false;
            gameOverPanel.SetActive(true);
            gameStop=true;
-           Debug.Log(123);
         }
     }
 
@@ -203,6 +196,7 @@ public class GameManager : MonoBehaviour
     {
         generateGame();
         gameOverPanel.SetActive(false);
+        gameWinPanel.SetActive(false);
         canClick=true;
         gameStop=false;
         tempLevelTime=levelTime;

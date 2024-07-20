@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -97,7 +98,12 @@ public class GameManager : MonoBehaviour
                                     child.GetComponent<Image>().sprite=defaultImg;
                                     child.transform.rotation= Quaternion.Euler(new Vector3(0,0,0));
                                 }
-                                wrongCardOpened++;
+
+                                if(gameMode==GameMode.Hard)
+                                {
+                                    wrongCardOpened++;
+                                }
+                                
                                 if(wrongCardOpened==5)
                                 {
                                     CardReposition();
@@ -117,8 +123,44 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public List<GameObject> currentCardList= new List<GameObject>();
     void CardReposition()
     {
+        
+        List<GameObject> newCardList = new List<GameObject>();
+        int randomCard=0;
+        foreach(Transform child in CardField.transform)
+        {
+            if(child.GetComponent<Button>().enabled == true)
+            {
+                GameObject card= Instantiate(child.gameObject);
+                currentCardList.Add(card);
+            }
+            
+        }
+        
+        pair_card.Clear();
+        foreach(Transform child in CardField.transform)
+        {
+            if(child.GetComponent<Button>().enabled == true)
+            {
+                Destroy(child.gameObject);
+            }
+            
+        }
+        Debug.Log(currentCardList.Count);
+        while(currentCardList.Count> 0)
+        {
+            randomCard=Random.Range(0,currentCardList.Count);
+            GameObject card= currentCardList[randomCard];
+            
+            card.transform.SetParent(CardField.transform);
+            currentCardList.RemoveAt(randomCard);
+            card.transform.localScale=new Vector3(1,1,1);
+        }
+        
+        wrongCardOpened=0;
+
         
     }
 

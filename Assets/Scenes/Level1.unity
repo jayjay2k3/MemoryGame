@@ -451,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 1027184308}
     - target: {fileID: 6788616585012486103, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}
       propertyPath: gameMode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6788616585012486103, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}
       propertyPath: CardField
@@ -481,6 +481,10 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1554314797}
+    - target: {fileID: 6788616585012486103, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}
+      propertyPath: wrongCardOpened
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6788616585012486106, guid: d62c14a59fbd9e44baf6d99d92e1935a, type: 3}
       propertyPath: m_Name
       value: GameManager
